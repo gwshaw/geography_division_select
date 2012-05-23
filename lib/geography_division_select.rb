@@ -63,7 +63,7 @@ module ActionView
               end
               selected_options+= options_for_select(sel_state_options.sort, selected)
           end
-          return selected_options
+          return selected_options.html_safe
         end
        
        private 
